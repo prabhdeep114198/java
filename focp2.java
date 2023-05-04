@@ -1,0 +1,34 @@
+// Maximum of three numbers using classes
+import java.util.* ;
+class max{
+	int a;
+	int b;
+	int c;
+	int num;
+	char ch;
+	public void info(){
+		System.out.println(this.num+"("+this.ch+")"+" is biggest number of all three.");
+	}
+}
+public class focp2{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		max mx = new max();
+		mx.a = sc.nextInt();
+		mx.b = sc.nextInt();
+		mx.c = sc.nextInt();
+		if(mx.a > mx.b && mx.a > mx.c){
+			mx.num = mx.a;
+			mx.ch ='a';
+		}
+		else if(mx.b > mx.a && mx.b > mx.c){
+			mx.num = mx.b;
+			mx.ch ='b';
+		}
+		else if(mx.c > mx.b && mx.c > mx.a){
+			mx.num = mx.c;
+			mx.ch ='c';
+		}
+		mx.info();
+	}
+}

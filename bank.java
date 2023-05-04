@@ -1,0 +1,26 @@
+import java.io.* ;
+import java.util.* ;
+class account{
+    String name;
+    long accno;
+    char acctype;  //S for saving and C for current 
+    int balance;
+    public void givedetails(String na, long acc, char type,int bal){
+        this.name = na;
+        this.accno = acc;
+        this.acctype = type ;
+        this.balance = bal;
+    }
+    public void getdetails(){
+        System.out.println("name = "+this.name+"\naccount number = "+this.accno+"\naccount type = "+this.acctype+"\nbalance = "+this.balance);
+    }
+}
+public class bank{
+    public static void main(String[] args) {
+        account ac = new account();
+        Scanner sc = new Scanner(System.in);
+        ac.givedetails("Prabhdeep",123456,'S',54000);
+        ac.getdetails();
+
+    }
+}
