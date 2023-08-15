@@ -13,10 +13,10 @@ class omps{
 class methods{
     public static void main(String[] args) {
         omps op = new omps();
-        op.setter("prabhdeep",19);
+        op.setter("xyz",10);
         op.getter();
         omps op1 = new omps();
-        op1.setter("leana",18);
+        op1.setter("abc",18);
         op1.getter();
     }
 }
